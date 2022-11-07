@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schoolert.Server", "Server\Schoolert.Server.csproj", "{10058BFF-8CE2-4A68-906D-CCBFE2A0EDCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schoolert.Server", "Server\Schoolert.Server.csproj", "{10058BFF-8CE2-4A68-906D-CCBFE2A0EDCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schoolert.Client", "Client\Schoolert.Client.csproj", "{758EDBEB-13A0-42B0-AE72-5DCB6698065A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schoolert.Client", "Client\Schoolert.Client.csproj", "{758EDBEB-13A0-42B0-AE72-5DCB6698065A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schoolert.Shared", "Shared\Schoolert.Shared.csproj", "{8BBAFCAD-CDF2-453B-93C7-24C6E2848D13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schoolert.Shared", "Shared\Schoolert.Shared.csproj", "{8BBAFCAD-CDF2-453B-93C7-24C6E2848D13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,12 +1,21 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
+﻿@inject NavigationManager NavManager
+
+<Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
     <NotFound>
-        <PageTitle>Not found</PageTitle>
+        <PageTitle>404 | Schoolert</PageTitle>
         <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
+            <p role="alert">Съжаляваме, съдържанието, което търсите, е премахнато, преместено или не съществува.</p>
+            <button class="btn btn-dark" @onclick="GoToHomepage">Обратно към началната страница</button>
         </LayoutView>
     </NotFound>
 </Router>
+
+@code {
+    private void GoToHomepage() {
+        NavManager.NavigateTo("/");
+    }
+}

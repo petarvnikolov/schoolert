@@ -36,6 +36,10 @@ main {
         text-overflow: ellipsis;
     }
 
+    .dropdown-item.active, .nav-item a.active {
+        background-color: transparent !important;
+    }
+
 @media (max-width: 640.98px) {
     .top-row:not(.auth) {
         display: none;

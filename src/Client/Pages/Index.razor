@@ -1,9 +1,10 @@
 ﻿@page "/"
+@inject IStringLocalizer<Resource> Localizer
 
 <PageTitle>Schoolert</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1>@Localizer["HelloWorld"]</h1>
 
-Welcome to your new app.
+@Localizer["Welcome"]
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<SurveyPrompt Title=@Localizer["SurveyPromptTitle"] />
